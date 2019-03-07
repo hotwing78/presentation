@@ -1,0 +1,13 @@
+#Specify version of docker-compose to use. *note* must be a space between key & value
+
+version: '3'
+services:
+        redis-server:
+           image: 'redis'
+
+#Look in the current directory for a Dockerfile and use that to build an image of the app. 
+#Also specify the ports with the - *note* also needs a space after -
+        node-app:
+            build: .
+            ports:
+                - "4001:8081"
