@@ -7,4 +7,4 @@ before_install:
 
 
 script:
-        - docker run htowing78/docker-react npm run test -- --coverage        
+        - docker run hotwing78/docker-react npm run test -- --coverage        
